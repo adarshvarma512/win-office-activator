@@ -1,96 +1,108 @@
 <div align="center">
-  <img src="https://img.icons8.com/fluency/96/windows-11.png" alt="Logo" width="80" height="80">
-  <h1>Office Deployment & System Activation Suite</h1>
-  <p>Automated Microsoft Office (32-bit & 64-bit) Deployment and System Activation Utilities</p>
+  <img src="https://img.icons8.com/fluency/96/windows-11.png" alt="System Logo" width="80" height="80">
+  <h1>Automated System Activation & Office Deployment Suite</h1>
+  <p>Enterprise-Grade Automation Scripts for Windows Licensing and Microsoft Office Deployment</p>
 
   <p>
     <img src="https://img.shields.io/badge/Platform-Windows%2010%20%2F%2011-0078D6?style=for-the-badge&logo=windows&logoColor=white" alt="Platform">
     <img src="https://img.shields.io/badge/Architecture-x86%20%7C%20x64-2EA44F?style=for-the-badge" alt="Architecture">
-    <img src="https://img.shields.io/badge/Version-3.0-orange?style=for-the-badge" alt="Version">
+    <img src="https://img.shields.io/badge/Automation-Batch%20%2F%20PowerShell-555555?style=for-the-badge&logo=powershell&logoColor=white" alt="Automation">
+    <img src="https://img.shields.io/badge/Security-Admin%20Privileges-FF5722?style=for-the-badge&logo=windowssecurity&logoColor=white" alt="Security">
   </p>
 
   <p>
     <a href="#download-center">
-      <img src="https://img.shields.io/badge/Download_All_Packages-1F6FEB?style=for-the-badge&logo=github&logoColor=white" alt="Download">
+      <img src="https://img.shields.io/badge/Access_Download_Center-1F6FEB?style=for-the-badge&logo=github&logoColor=white" alt="Download">
     </a>
-    <a href="#repository-structure">
-      <img src="https://img.shields.io/badge/View_Documentation-30363D?style=for-the-badge&logo=readthedocs&logoColor=white" alt="Docs">
+    <a href="#core-automation-logic">
+      <img src="https://img.shields.io/badge/View_Script_Logic-30363D?style=for-the-badge&logo=read-the-docs&logoColor=white" alt="Logic Docs">
     </a>
   </p>
 </div>
 
 ---
 
-## Interface & Preview
-
 <div align="center">
-  <!-- Apne software ya setup ka screenshot yahan lagayein (assets folder mein image daal kar path update karein) -->
-  <img src="https://via.placeholder.com/800x400/0D1117/58A6FF?text=Replace+With+Your+Software+Screenshot" alt="Application Preview" width="85%">
+  <img src="https://via.placeholder.com/900x450/0D1117/58A6FF?text=System+Activation+and+Office+Deployment+Control+Center" alt="Suite Banner" width="90%">
 </div>
 
 ---
 
-## Included Tools & Modules
+## Architecture Overview & Core Modules
 
 <table>
   <tr>
-    <td width="50%" valign="top">
-      <h3>
-        <img src="https://img.icons8.com/fluency/48/key-security.png" width="22" align="absmiddle">
-        Activation Utility (V3.0)
-      </h3>
-      <p><b>Directory:</b> <code>/Activation</code></p>
-      <p>Standalone executable utility (<code>Activation Setup V3.0.exe</code>) designed for automated Windows and Office licensing configuration.</p>
-      <ul>
-        <li>One-click standalone setup</li>
-        <li>Automated script execution</li>
-        <li>Supports standard Windows & Office builds</li>
-      </ul>
+    <td width="33%" valign="top" align="center">
+      <img src="https://img.icons8.com/fluency/64/security-checked.png" width="48" alt="Windows Activation">
+      <h3>Windows Activation</h3>
+      <p><b>File:</b> <code>Activation Setup V3.0.exe</code></p>
+      <p>Standalone utility engineered for automated Windows system activation and licensing verification.</p>
     </td>
-    <td width="50%" valign="top">
-      <h3>
-        <img src="https://img.icons8.com/fluency/48/microsoft-office-2019.png" width="22" align="absmiddle">
-        Office Deployment (32-Bit & 64-Bit)
-      </h3>
-      <p><b>Directories:</b> <code>/Office 32</code> & <code>/Office 64</code></p>
-      <p>Pre-configured Microsoft Office Deployment Tool (ODT) packages for silent, customized installation and activation.</p>
-      <ul>
-        <li><code>Configuration.xml</code> — Custom app & language selection</li>
-        <li><code>install.bat</code> — Automated ODT download & setup</li>
-        <li><code>active.bat</code> — Post-installation license activation</li>
-      </ul>
+    <td width="33%" valign="top" align="center">
+      <img src="https://img.icons8.com/fluency/64/microsoft-excel-2019.png" width="48" alt="Office Installer">
+      <h3>Office Installation</h3>
+      <p><b>File:</b> <code>install.bat</code></p>
+      <p>Automated deployment engine utilizing Microsoft Office Deployment Tool (ODT) and custom XML configurations[cite: 2].</p>
+    </td>
+    <td width="33%" valign="top" align="center">
+      <img src="https://img.icons8.com/fluency/64/services.png" width="48" alt="Office Activation">
+      <h3>Office Licensing</h3>
+      <p><b>File:</b> <code>active.bat</code></p>
+      <p>Advanced OSPPREARM utility that scans and executes licensing rearm routines for Office environments[cite: 3].</p>
     </td>
   </tr>
 </table>
 
 ---
 
-## Download Center
+## Core Automation Logic & Script Breakdown
 
-Direct access to individual installers and deployment scripts:
+<div align="center">
+  <img src="https://img.shields.io/badge/Deep_Dive-Logic_Implementation-blue?style=for-the-badge" alt="Logic Deep Dive">
+</div>
 
-| Module | Architecture | Key File | Direct Action |
-| :--- | :--- | :--- | :--- |
-| **Activation Setup V3.0**[cite: 1] | Universal (x86/x64) | `Activation Setup V3.0.exe`[cite: 1] | [![Download](https://img.shields.io/badge/Download_EXE-238636?style=flat-square&logo=windows&logoColor=white)](./Activation/Activation%20Setup%20V3.0.exe) |
-| **Office Deployment (32-Bit)**[cite: 1] | 32-Bit (x86) | `install.bat` / `Configuration.xml`[cite: 1] | [![Open Folder](https://img.shields.io/badge/Open_Office_32-1F6FEB?style=flat-square&logo=files&logoColor=white)](./Office%2032) |
-| **Office Deployment (64-Bit)**[cite: 1] | 64-Bit (x64) | `install.bat` / `Configuration.xml`[cite: 1] | [![Open Folder](https://img.shields.io/badge/Open_Office_64-1F6FEB?style=flat-square&logo=files&logoColor=white)](./Office%2064) |
+### 1. Office Installation Logic (`install.bat`)
+The installation script executes a robust, multi-stage automated deployment pipeline[cite: 2]:
+* **Administrator Privilege Validation:** Automatically checks execution rights via `net session`. If standard privileges are detected, it invokes a PowerShell process to restart the script with elevated administrative permissions (`Verb RunAs`)[cite: 2].
+* **Environment & Dependency Verification:** Locates the Microsoft Office Deployment Tool executable (`officedeploymenttool*.exe`) and the deployment blueprint (`configuration.xml`) within the local directory. Halts execution with an error code if dependencies are missing[cite: 2].
+* **Workspace Preparation:** Creates a dedicated working directory at `C:\Office 2021` and securely copies the ODT executable and configuration file into the target directory[cite: 2].
+* **Automated Extraction & Deployment:** Executes silent extraction of the ODT package (`/extract:"C:\Office 2021"`), validates the existence of the generated `setup.exe`, and triggers the primary setup command: `setup.exe /configure configuration.xml`[cite: 2].
+
+### 2. Office Licensing & Rearm Logic (`active.bat`)
+The activation script manages Office licensing states through the native `OSPPREARM.exe` utility[cite: 3]:
+* **Privilege Elevation Check:** Enforces administrator security checks via `net session`, relaunching through PowerShell with elevated privileges if necessary[cite: 3].
+* **Intelligent Path Scanning:** Systematically searches standard and deep system directories for `OSPPREARM.exe` across multiple potential locations[cite: 3]:
+  * Standard 64-bit path: `%ProgramFiles%\Microsoft Office\Office16\`[cite: 3]
+  * 32-bit Office on 64-bit Windows path: `%ProgramFiles(x86)%\Microsoft Office\Office16\`[cite: 3]
+  * Common Click-to-Run path: `%ProgramFiles%\Microsoft Office\root\Office16\`[cite: 3]
+  * Alternate Click-to-Run path: `%ProgramFiles(x86)%\Microsoft Office\root\Office16\`[cite: 3]
+* **Execution & Error Handling:** Once located, the script executes `OSPPREARM.exe` to reset the evaluation/licensing grace period, capturing and reporting exit codes to verify successful operation[cite: 3].
 
 ---
 
-## Repository Structure
+## Download & Resource Center
 
-```text
-├── Activation/
-│   └── Activation Setup V3.0.exe        # Main standalone activation installer
-│
-├── Office 32/
-│   ├── Configuration.xml                # 32-bit Office deployment parameters
-│   ├── install.bat                      # 32-bit automated installer script
-│   ├── active.bat                       # 32-bit activation script
-│   └── officedeploymenttool_20228...    # Official Microsoft ODT binary
-│
-└── Office 64/
-    ├── Configuration.xml                # 64-bit Office deployment parameters
-    ├── install.bat                      # 64-bit automated installer script
-    ├── active.bat                       # 64-bit activation script
-    └── officedeploymenttool_20228...    # Official Microsoft ODT binary
+| Component Module | Target Application / System | Primary Executable / Script | Action Status |
+| :--- | :--- | :--- | :--- |
+| **Windows Activation Suite** | Windows OS Licensing | `Activation Setup V3.0.exe` | [![Download EXE](https://img.shields.io/badge/Download_EXE-238636?style=flat-square&logo=windows&logoColor=white)](./Activation/Activation%20Setup%20V3.0.exe) |
+| **Office Deployment Engine** | Microsoft Office Suite | `install.bat`[cite: 2] | [![View Script](https://img.shields.io/badge/Get_Installer-1F6FEB?style=flat-square&logo=windows-terminal&logoColor=white)](./Office/install.bat) |
+| **Office Licensing Utility** | Office Rearm / Activation | `active.bat`[cite: 3] | [![View Script](https://img.shields.io/badge/Get_Utility-1F6FEB?style=flat-square&logo=windows-terminal&logoColor=white)](./Office/active.bat) |
+
+---
+
+## Execution Guidelines & System Requirements
+
+<div align="center">
+  <img src="https://img.shields.io/badge/System_Requirements-Windows_10_%2F_11-informational?style=for-the-badge&logo=windows" alt="Requirements">
+</div>
+
+* **Operating System Compatibility:** Windows 10 or Windows 11 (32-bit & 64-bit architectures).
+* **Execution Security:** Administrative rights are mandatory for batch script execution and standalone system utilities.
+* **Network Connectivity:** Internet connection required during Office installation for downloading deployment packages via the ODT engine.
+
+---
+
+<div align="center">
+  <img src="https://img.shields.io/badge/Maintained_By-System_Administrator-success?style=for-the-badge" alt="Maintained">
+  <p>Professional Deployment & Activation Suite</p>
+</div>
